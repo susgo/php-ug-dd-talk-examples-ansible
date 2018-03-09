@@ -31,5 +31,5 @@ The repo contains also a Vagrantfile and a Dockerfile.
 * [A vagrant environment with a master and a slave vm for debugging ansible playbooks for debian](https://github.com/chbie/ansible-playground) (Thanks @chbie)
 * [Published roles on ansible galaxy](https://galaxy.ansible.com)
 * [A few starter examples of ansible playbooks, to show features and how they work together](https://github.com/ansible/ansible-examples)
-* Very activ man on coding ansible roles or for Drupal things: @geerlingguy (Author of the book [Ansible for DevOps](https://www.amazon.de/Ansible-DevOps-Server-configuration-management/dp/098639341X/ref=sr_1_1?ie=UTF8&qid=1520584336&sr=8-1&keywords=ansible+for+devops))
+* Very activ man on coding ansible roles or for Drupal things: @geerlingguy (Author of the book [Ansible for DevOps](https://www.ansiblefordevops.com))
 
