@@ -1,0 +1,20 @@
+# This file is going to be an Apache conf file
+
+<VirtualHost *:80>
+    ServerAdmin webmaster@example.de
+    ServerName {{ domain }}
+    ServerAlias www.{{ domain }}
+    DocumentRoot /var/www/html/{{ domain }}/app/web
+    <Directory /var/www/html/{{ domain }}/app/web>
+        AllowOverride All
+        Options FollowSymLinks MultiViews
+        Order allow,deny
+        allow from all
+    </Directory>
+    ErrorLog ${APACHE_LOG_DIR}/{{ domain }}_error.log
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+    LogLevel warn
+    CustomLog ${APACHE_LOG_DIR}/{{ domain }}_access.log combined
+    php_value error_log ${APACHE_LOG_DIR}/php_{{ domain }}_php.error.log
+</VirtualHost>
